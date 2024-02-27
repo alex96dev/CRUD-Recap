@@ -2,6 +2,8 @@
 
 In this Recap, you will collaborate to build the entire frontend of the TOURIO App.
 
+**In this project you will focus exclusicely on state handling in your application. (Meaning displaying, adding, updating and removing data from your state)**
+
 This project will be completed in groups. To begin, one member of your group should create a repository using this template. Then, invite the rest of your group members as collaborators to this project.
 
 As is standard practice, each feature should be developed on a separate branch.
@@ -56,7 +58,7 @@ As is standard practice, each feature should be developed on a separate branch.
 - **Implement the `handleAddPlace` Function**
 
   - In your `_app.js` write a function named `handleAddPlace` that will be responsible for adding a new place to the state.
-  - This function should accept the form data as an argument, generate a unique ID for the new entry using `nanoid`, and then add the new place to the existing state.
+  - This function should accept the form data as an argument, generate a unique ID for the new entry using `uuid`, and then add the new place to the existing state.
 
 - **State and Handler Propagation**
 
