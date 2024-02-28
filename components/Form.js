@@ -4,8 +4,6 @@ export default function Form({ onAddPlace }) {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData);
 
-    console.log(data);
-
     onAddPlace(data);
   }
 
@@ -22,7 +20,7 @@ export default function Form({ onAddPlace }) {
       <label htmlFor="description" name="description">
         description:
       </label>
-      <input type="text" id="description" />
+      <input type="text" id="description" name="description" />
       <br />
       <br />
       <button type="submit">Submit</button>

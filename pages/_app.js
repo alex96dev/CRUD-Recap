@@ -5,9 +5,10 @@ export default function App({ Component, pageProps }) {
   const [places, setPlaces] = useState();
 
   function handleAddPlace(data) {
-    // setPlaces(...places, place);
-    console.log(data);
+    setPlaces([...places, data]);
   }
+
+  console.log(places);
 
   return (
     <>
