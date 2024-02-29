@@ -15,7 +15,7 @@ export default function PlaceCard({ image, name, location }) {
     <div>
       <h2>{name}</h2>
       <h2>{location}</h2>
-      <StyledImage src={image} width={300} height={300} alt={name} />
+      <StyledImage src={image} width={3000} height={30} alt={name} />
     </div>
   );
 }

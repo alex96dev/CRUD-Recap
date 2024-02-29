@@ -9,7 +9,7 @@ export default function HomePage({ places }) {
       <Link href="/create">
         <button>Create</button>
       </Link>
-      {initialPlaces.map((place) => (
+      {places.map((place) => (
         <PlaceCard
           key={place.id}
           name={place.name}
