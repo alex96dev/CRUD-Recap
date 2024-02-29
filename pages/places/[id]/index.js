@@ -14,18 +14,18 @@ export default function DetailPage({ places, setPlaces }) {
     setFoundPlace(places.find((place) => place.id === id));
     //   setPlaces(foundPlace);
     //   }
-  }, [id]);
+  }, [id, places]);
   console.log(foundPlace);
 
   return (
     <div>
       <h1>{id}</h1>
-      {/* <PlaceCard
+      <PlaceCard
         key={foundPlace.id}
         name={foundPlace.name}
         location={foundPlace.location}
         image={foundPlace.image}
-      /> */}
+      />
     </div>
   );
 }
